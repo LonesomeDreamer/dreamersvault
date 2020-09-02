@@ -1,0 +1,41 @@
+form {
+  position: relative;
+  width: 60%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset {
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset div {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+fieldset div * {
+  padding: 0px 5px;
+}
+
+fieldset label {
+  width: 175px;
+}
+
+button[type="submit"] {
+  position: relative;
+  margin: 10px 0px;
+  width: 300px;
+}

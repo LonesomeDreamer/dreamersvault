@@ -1,0 +1,242 @@
+{
+  "weekday": [
+    {
+      "events": [
+        {
+          "name": "Power Up",
+          "startTime": "0",
+          "endTime": "4"
+        },
+        {
+          "name": "Research Master",
+          "startTime": "4",
+          "endTime": "8"
+        },
+        {
+          "name": "Whispering Of Runes",
+          "startTime": "8",
+          "endTime": "12"
+        },
+        {
+          "name": "Fast Training",
+          "startTime": "12",
+          "endTime": "16"
+        },
+        {
+          "name": "Wish Tree",
+          "startTime": "16",
+          "endTime": "20"
+        },
+        {
+          "name": "Clean Up",
+          "startTime": "20",
+          "endTime": "0"
+        }
+      ]
+    },
+    {
+      "events": [
+        {
+          "name": "Clean Up",
+          "startTime": "0",
+          "endTime": "4"
+        },
+        {
+          "name": "Power Up",
+          "startTime": "4",
+          "endTime": "8"
+        },
+        {
+          "name": "Research Master",
+          "startTime": "8",
+          "endTime": "12"
+        },
+        {
+          "name": "Whispering Of Runes",
+          "startTime": "12",
+          "endTime": "16"
+        },
+        {
+          "name": "Fast Training",
+          "startTime": "16",
+          "endTime": "20"
+        },
+        {
+          "name": "Wish Tree",
+          "startTime": "20",
+          "endTime": "0"
+        }
+      ]
+    },
+    {
+      "events": [
+        {
+          "name": "Research Master",
+          "startTime": "0",
+          "endTime": "4"
+        },
+        {
+          "name": "Fast Training",
+          "startTime": "4",
+          "endTime": "8"
+        },
+        {
+          "name": "Wish Tree",
+          "startTime": "8",
+          "endTime": "12"
+        },
+        {
+          "name": "Clean Up",
+          "startTime": "12",
+          "endTime": "16"
+        },
+        {
+          "name": "Power Up",
+          "startTime": "16",
+          "endTime": "20"
+        },
+        {
+          "name": "Fullspeed Build",
+          "startTime": "20",
+          "endTime": "0"
+        }
+      ]
+    },
+    {
+      "events": [
+        {
+          "name": "Fast Training",
+          "startTime": "0",
+          "endTime": "4"
+        },
+        {
+          "name": "Wish Tree",
+          "startTime": "4",
+          "endTime": "8"
+        },
+        {
+          "name": "Clean Up",
+          "startTime": "8",
+          "endTime": "12"
+        },
+        {
+          "name": "Power Up",
+          "startTime": "12",
+          "endTime": "16"
+        },
+        {
+          "name": "Research Master",
+          "startTime": "16",
+          "endTime": "20"
+        },
+        {
+          "name": "Whispering Of Runes",
+          "startTime": "20",
+          "endTime": "0"
+        }
+      ]
+    },
+    {
+      "events": [
+        {
+          "name": "Research Master",
+          "startTime": "0",
+          "endTime": "4"
+        },
+        {
+          "name": "Whispering Of Runes",
+          "startTime": "4",
+          "endTime": "8"
+        },
+        {
+          "name": "Fast Training",
+          "startTime": "8",
+          "endTime": "12"
+        },
+        {
+          "name": "Wish Tree",
+          "startTime": "12",
+          "endTime": "16"
+        },
+        {
+          "name": "Wolves",
+          "startTime": "16",
+          "endTime": "20"
+        },
+        {
+          "name": "Wolves",
+          "startTime": "20",
+          "endTime": "0"
+        }
+      ]
+    },
+    {
+      "events": [
+        {
+          "name": "Whispering Of Runes",
+          "startTime": "0",
+          "endTime": "4"
+        },
+        {
+          "name": "Wish Tree",
+          "startTime": "4",
+          "endTime": "8"
+        },
+        {
+          "name": "Power Up",
+          "startTime": "8",
+          "endTime": "12"
+        },
+        {
+          "name": "Research Master",
+          "startTime": "12",
+          "endTime": "16"
+        },
+        {
+          "name": "Fullspeed Build",
+          "startTime": "16",
+          "endTime": "20"
+        },
+        {
+          "name": "Fast Training",
+          "startTime": "20",
+          "endTime": "0"
+        }
+      ]
+    },
+    {
+      "events": [
+        {
+          "name": "Barbarian War",
+          "startTime": "0",
+          "endTime": "4"
+        },
+        {
+          "name": "Barbarian War",
+          "startTime": "4",
+          "endTime": "8"
+        },
+        {
+          "name": "Barbarian War",
+          "startTime": "8",
+          "endTime": "12"
+        },
+        {
+          "name": "Barbarian War",
+          "startTime": "12",
+          "endTime": "16"
+        },
+        {
+          "name": "Barbarian War",
+          "startTime": "16",
+          "endTime": "20"
+        },
+        {
+          "name": "Barbarian War",
+          "startTime": "20",
+          "endTime": "0"
+        }
+      ]
+    }
+  ]
+}

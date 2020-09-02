@@ -1,0 +1,91 @@
+#status-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
+}
+
+#status-field * {
+  margin: 5px 0px;
+}
+
+#upload-status {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#upload-status.success {
+  background-color: green;
+}
+
+#upload-status.error {
+  background-color: red;
+}
+
+#error-msg {
+  border-radius: 50%;
+}
+
+#error-msg.success {
+  color: black;
+}
+
+#error-msg.error {
+  color: red;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 0px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  border: 1px solid black;
+}
+
+main {
+  position: absolute;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 30px;
+  margin: 100px 0px 0px 0px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset div {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+fieldset div * {
+  padding: 0px 5px;
+}
+
+input[type="submit"] {
+  margin: auto;
+}

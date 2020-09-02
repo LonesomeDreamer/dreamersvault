@@ -1,0 +1,71 @@
+{
+  "insurances": [{
+      "insuranceID": "1234 12345678",
+      "insuranceType": "ДМС",
+      "expirationDate": "14.08.2020",
+      "insuranceCompany": "СК МЕД-АСКЕР",
+      "phone": "8(495)123-45-67",
+      "logoURL": "./images/SK_MED-ASKER.png"
+    },
+    {
+      "insuranceID": "9876 543210",
+      "insuranceType": "ОМС",
+      "expirationDate": "15.08.2021",
+      "insuranceCompany": "СК МЕД-АСКЕР",
+      "phone": "8(495)123-45-67",
+      "logoURL": "./images/SK_MED-ASKER.png"
+    },
+    {
+      "insuranceID": "1234-123456-78",
+      "insuranceType": "ДМС",
+      "expirationDate": "16.08.2022",
+      "insuranceCompany": "СК Рандеву",
+      "phone": "8(499)123-45-68",
+      "logoURL": "./images/SK_Randevu.png"
+    },
+    {
+      "insuranceID": "98-76 5432-10",
+      "insuranceType": "ОМС",
+      "expirationDate": "24.11.2023",
+      "insuranceCompany": "СК Рандеву",
+      "phone": "8(499)123-45-68",
+      "logoURL": "./images/SK_Randevu.png"
+    },
+    {
+      "insuranceID": "12-341234-5678",
+      "insuranceType": "ДМС",
+      "expirationDate": "25.11.2024",
+      "insuranceCompany": "Страх-трах",
+      "phone": "8(812)123-45-69",
+      "logoURL": "./images/Strah-trah.png"
+    },
+    {
+      "insuranceID": "9876-543210",
+      "insuranceType": "ОМС",
+      "expirationDate": "26.11.2025",
+      "insuranceCompany": "Страх-трах",
+      "phone": "8(812)123-45-69",
+      "logoURL": "./images/Strah-trah.png"
+    }
+  ],
+
+  "services": [{
+      "servicesIncluded": [
+        "Первичный приём врача-стоматолога терапевта",
+        "Полирование челюсти",
+        "Снятие камней с 1 зуба",
+        "Рентген верхней и нижней челюсти",
+        "МРТ грудной клетки"
+      ]
+    },
+    {
+      "servicesExcluded": [
+        "МРТ челюсти",
+        "Рентген грудной клетки",
+        "Исследование функции внешнего дыхания",
+        "Денситометрия",
+        "МРТ головного мозга"
+      ]
+    }
+  ]
+}

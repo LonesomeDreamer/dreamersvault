@@ -1,0 +1,101 @@
+#pomodoroWrapper {
+  font: 16px "Rubik", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#pomodoroStatus {
+  font-size: 400%;
+  color: #34e03f;
+}
+
+p div {
+  color: red;
+}
+
+#pomodoroStatus.pomodoroWork {
+  color: #34e03f;
+}
+
+#pomodoroStatus.pomodoroBreak {
+  color: #db0021;
+}
+
+#pomodoroTimer{
+  font-size: 400%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pomodoroTimer span {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pomodoroMenu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 35% 10% 35% 10%;
+  grid-template-rows: 40px 40px 40px 40px 40px;
+}
+
+#pomodoroMenu .pomodoroButton {
+  font-size: 150%;
+  border-radius: 30px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  transition: all 0.3s linear 0.0s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#pomodoroMenu .pomodoroButton:hover {
+  background-color: #FF0000;
+}
+
+@keyframes pomodoroButtonAnimation {
+  100% {background-color: #FFFFFF;}
+}
+
+@keyframes pomodoroButtonHoverAnimation {
+  100% {background-color: red;}
+}
+
+#pomodoroStart25 {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
+
+#pomodoroStart5 {
+  grid-column-start: 4;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
+
+#pomodoroStop {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 4;
+  grid-row-end: span 1;
+}
+
+#pomodoroSet {
+  grid-column-start: 4;
+  grid-column-end: span 1;
+  grid-row-start: 4;
+  grid-row-end: span 1;
+}
