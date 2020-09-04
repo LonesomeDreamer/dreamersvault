@@ -42,6 +42,12 @@ body {
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 600px) {
+  #medCardWindow {
+      position: relative;
+  }
+}
+
 #medCardWindowTitle {
   position: absolute;
   width: 704px;
