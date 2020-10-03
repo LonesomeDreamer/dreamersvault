@@ -1,12 +1,16 @@
-<header id="mainNavBar">
-  <div id="navBar-wrapper">
-    <a id="homeLink" class="mainNavBar-block" href="/">
+<header id="header">
+  <div id="site-logo" class="header-block">
+    <a id="home-link" href="/">
       <img src="/images/persona5_hat.png" />
     </a>
-    <button id="m-menu-burger"><img src="/images/menu_burger.png" alt="mobile menu"/></button>
+  </div>
+  <div class="header-block">
+    <button id="m-menu-burger">
+      <img src="/images/menu_burger.png" alt="mobile menu"/>
+    </button>
   </div>
   <div id="m-menu-wrapper">
-    <div class="mainNavBar-block">
+    <div class="header-block">
       <div class="topic">
         <a class="topic-link" href="/content/portfolio">MY&nbsp;PORTFOLIO</a>
       </div>
@@ -30,7 +34,7 @@
         </ul>
       </div>
     </div>
-    <div class="mainNavBar-block contact-links">
+    <div class="header-block contact-links">
       <a class="contact-link" href="https://t.me/WickedDreamer" target="_blank">
         <img class="contact-info-icon" alt="telegram" src="/images/telegram_icon.png">
         <span id="telegram">&nbsp;&nbsp;@WickedDreamer</span>

@@ -1,6 +1,6 @@
 const body = document.querySelector("body");
-const mainNavBar = document.querySelector("#mainNavBar");
-const home = document.querySelector("#homeLink");
+const header = document.querySelector("#header");
+const home = document.querySelector("#home-link");
 const footer = document.querySelector("#footer");
 const dropdownMenus = document.querySelectorAll(".dropdown-menu");
 const topicLinks = document.querySelectorAll(".topic-link");
@@ -8,34 +8,17 @@ const dropdownButtons = document.querySelectorAll(".dropdown-list-button");
 const mMenuWrapper = document.querySelector("#m-menu-wrapper");
 const mMenuBurger = document.querySelector("#m-menu-burger");
 const menus = document.querySelectorAll(".topic.dropdown-menu");
-
-/*let a = document.querySelector("html");
-let b = document.querySelector("body");
-let c = document.querySelector("#mainWindow");
-c.innerHTML = "HTML: " + window.getComputedStyle(a).height + "BODY: " + window.getComputedStyle(b).height;
-
-window.addEventListener("resize", event => {
-  c.innerHTML = new Date() + "RESIZED HTML: " + window.getComputedStyle(a).height + "BODY: " + window.getComputedStyle(b).height;
-  //body.minHeight = screen.height;
-})*/
-
-/*window.addEventListener("resize", event => {
-  body.style.minHeight = screen.height + "px";
-  console.log("HEIGHT", window.getComputedStyle(document.querySelector("body")).minHeight);
-  console.log("SCREEN", screen.availHeight);
-  //body.minHeight = screen.height;
-})*/
+const fog = document.querySelector("#fog");
 
 mMenuBurger.addEventListener("click", event => {
   if (mMenuWrapper.style.visibility == "visible") {
-    mMenuWrapper.style.visibility = "hidden";
-    mMenuWrapper.style.height = "0px";
-    document.querySelector("#fog").style.display = "none";
-    mMenuBurger.style.backgroundColor = "#000000";
+    mMenuWrapper.removeAttribute("style");
+    mMenuBurger.removeAttribute("style");
+    fog.removeAttribute("style");
   } else {
     mMenuWrapper.style.visibility = "visible";
     mMenuWrapper.style.height = "auto";
-    document.querySelector("#fog").style.display = "block";
+    fog.style.display = "block";
     mMenuBurger.style.backgroundColor = "#222222";
   }
 });
@@ -103,6 +86,6 @@ window.addEventListener("click", (event) => {
     mMenuBurger.style.backgroundColor = "#000000";
     mMenuWrapper.style.visibility = "hidden";
     mMenuWrapper.style.height = "0px";
-    document.querySelector("#fog").style.display = "none";
+    document.querySelector("#fog").removeAttribute("style");
   }
 });

@@ -31,15 +31,8 @@ html {
 body {
   box-sizing: border-box;
   position: relative;
-  min-height: 100%;
-  padding-bottom: 100px;
+  height: inherit;
   width: 100%;
-}
-
-@media (max-width: 600px) {
-  body {
-    padding-bottom: 70px;
-  }
 }
 
 #background {
@@ -55,18 +48,18 @@ body {
 }
 
 #fog {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 100;
   background-color: #000000;
   opacity: 0.9;
   display: none;
 }
 
-#mainNavBar {
+#header {
   box-sizing:border-box;
   font: 16px "Rubik", sans-serif;
   position: sticky;
@@ -77,17 +70,17 @@ body {
   justify-content: flex-start;
   align-items: center;
   background-color: #000000;
-  animation: mainNavBar-neon 10s linear infinite;
+  animation: header-neon 10s linear infinite;
   z-index: 1000;
 }
 
 @media (max-width: 600px) {
-  #mainNavBar {
+  #header {
     height: 75px;
   }
 }
 
-@keyframes mainNavBar-neon {
+@keyframes header-neon {
   0%      {box-shadow: 0px 0px 30px #880000; border-bottom: 5px solid #880000;}
   7%      {box-shadow: 0px 0px 30px #FF0000; border-bottom: 5px solid #FF0000;}
   14%     {box-shadow: 0px 0px 30px #FF8800; border-bottom: 5px solid #FF8800;}
@@ -105,11 +98,11 @@ body {
   100%    {box-shadow: 0px 0px 30px #880000; border-bottom: 5px solid #880000;}
 }
 
-#mainNavBar * {
+#header * {
   color: #FFFFFF;
 }
 
-#navBar-wrapper {
+#site-logo {
   height: 100%;
   position: relative;
   display: flex;
@@ -119,7 +112,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  #navBar-wrapper {
+  #site-logo {
     flex: 1;
   }
 }
@@ -214,13 +207,14 @@ body {
   border: 0px;
 }
 
-.mainNavBar-block {
+.header-block {
   display: flex;
   height: 100%;
+  background-color: #000000;
 }
 
 @media (max-width: 600px) {
-  #m-menu-wrapper .mainNavBar-block {
+  #m-menu-wrapper .header-block {
     box-sizing: border-box;
     flex-direction: column;
     width: 100%;
@@ -298,7 +292,7 @@ body {
   }
 }
 
-#homeLink {
+#home-link {
   height: 100%;
   width: auto;
   display: flex;
@@ -308,17 +302,17 @@ body {
 }
 
 @media (max-width: 600px) {
-  #homeLink {
+  #home-link {
     margin: 0px 20px;
   }
 }
 
-#homeLink img {
+#home-link img {
   height: 75%;
   width: auto;
 }
 
-.mainNavBar-block .topic {
+.header-block .topic {
   position: relative;
   display: flex;
   justify-content: center;
@@ -332,7 +326,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .mainNavBar-block .topic {
+  .header-block .topic {
     font-size: 150%;
     border-bottom: 5px solid #FFFFFF;
     min-height: 50px;
@@ -374,7 +368,7 @@ a.contentLink {
 
 
 /*@media (min-width: 601px) {
-  .mainNavBar-block .topic:hover .dropdown-list-button svg {
+  .header-block .topic:hover .dropdown-list-button svg {
     transform: rotate(180deg);
   }
 
@@ -383,7 +377,7 @@ a.contentLink {
   }
 }*/
 
-.mainNavBar-block .topic:hover .dropdown-list-button svg {
+.header-block .topic:hover .dropdown-list-button svg {
   transform: rotate(180deg);
 }
 
@@ -417,13 +411,13 @@ a.contentLink {
 }
 
 /*@media (min-width: 601px) {
-  .mainNavBar-block .topic:hover .dropdown-list {
+  .header-block .topic:hover .dropdown-list {
     visibility: visible;
     height: auto;
   }
 }*/
 
-.mainNavBar-block .topic:hover .dropdown-list {
+.header-block .topic:hover .dropdown-list {
   visibility: visible;
   height: auto;
 }
@@ -453,7 +447,7 @@ a.contentLink {
   }
 }
 
-#mainNavBar .dropdown-list > li > *:hover {
+#header .dropdown-list > li > *:hover {
   color: #FF0000;
 }
 
@@ -495,13 +489,20 @@ a.contentLink {
   position: relative;
   top: 0px;
   width: 100%;
-  height: auto;
+  min-height: calc(100% - 105px - 100px);
   display: flex;
   padding: 40px 0px;
 }
 
+@media (max-width: 600px) {
+  #mainBlock {
+    min-height: calc(100% - 75px - 70px);
+  }
+}
+
 .sidebar {
   box-sizing: border-box;
+  height: 100%;
   width: 20%;
 }
 
@@ -512,6 +513,7 @@ a.contentLink {
 }
 
 #mainWindow {
+  height: max-content;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -536,7 +538,7 @@ a.contentLink {
   margin: 8px 0px;
 }
 
-#mainNavBar .topic-link {
+#header .topic-link {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
@@ -547,19 +549,13 @@ a.contentLink {
 }
 
 @media (max-width: 600px) {
-  #mainNavBar .topic-link {
+  #header .topic-link {
     justify-content: flex-end;
     height: 50px;
   }
 }
 
-/*@media (min-width: 601px) {
-  #mainNavBar .topic-link:hover {
-    color: #FF0000;
-  }
-}*/
-
-#mainNavBar .topic-link:hover {
+#header .topic-link:hover {
   color: #FF0000;
 }
 
@@ -567,7 +563,7 @@ a.contentLink {
 #footer {
   font: 16px "Rubik", sans-serif;
   height: 100px;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   width: 100%;
   background-color: #000000;
@@ -600,7 +596,7 @@ a.contentLink {
   }
 }
 
-#mainNavBar a {
+#header a {
   text-decoration: none;
 }
 
